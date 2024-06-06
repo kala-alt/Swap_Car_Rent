@@ -25,7 +25,7 @@ public class EstablishDBConnection {
     public static String loggedUsername;
     static MongoDatabase database = MongoClients.create(MongoClientSettings.builder()
             .applyConnectionString(new ConnectionString(
-                    "mongodb+srv://Kaloyan:Miroslav1921@cluster19.bncspba.mongodb.net/?retryWrites=true&w=majority&appName=Cluster19"))
+                    "mongodb+srv://Kaloyan:Miroslav1921@cluster1.2st8xsv.mongodb.net/?retryWrites=true&w=majority&appName=Cluster1"))
             .build()).getDatabase("RentACar");
     static MongoCollection<Document> collection;
 
