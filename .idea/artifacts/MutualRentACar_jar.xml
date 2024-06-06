@@ -1,0 +1,31 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="MutualRentACar:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/MutualRentACar_jar</output-path>
+    <root id="archive" name="MutualRentACar.jar">
+      <element id="module-output" name="MutualRentACar" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/openjfx/javafx-fxml/21/javafx-fxml-21-win.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/mongodb/mongodb-driver-sync/4.11.1/mongodb-driver-sync-4.11.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/qbicc/qbicc-runtime-main/0.76.0/qbicc-runtime-main-0.76.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/openjfx/javafx-base/21/javafx-base-21.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/qbicc/rt/qbicc-rt-java.logging/17.alpha.0.57/qbicc-rt-java.logging-17.alpha.0.57.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/qbicc/rt/qbicc-rt-java.transaction.xa/17.alpha.0.57/qbicc-rt-java.transaction.xa-17.alpha.0.57.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/openjfx/javafx-base/21/javafx-base-21-win.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/mongodb/bson/4.11.1/bson-4.11.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/openjfx/javafx-fxml/21/javafx-fxml-21.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/mongodb/mongodb-driver-core/4.11.1/mongodb-driver-core-4.11.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/google/auto/service/auto-service-annotations/1.0.1/auto-service-annotations-1.0.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/qbicc/rt/qbicc-rt-java.sql/17.alpha.0.57/qbicc-rt-java.sql-17.alpha.0.57.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/qbicc/qbicc-runtime-llvm/0.76.0/qbicc-runtime-llvm-0.76.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/qbicc/qbicc-runtime-unwind/0.76.0/qbicc-runtime-unwind-0.76.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/openjfx/javafx-graphics/21/javafx-graphics-21-win.jar" path-in-jar="/" />
+      <element id="library" level="project" name="Maven: org.qbicc:qbicc-runtime-api:1.0.0-SNAPSHOT" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/qbicc/rt/qbicc-rt-annotation/17.alpha.0.57/qbicc-rt-annotation-17.alpha.0.57.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/openjfx/javafx-graphics/21/javafx-graphics-21.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/qbicc/rt/qbicc-rt-java.base/17.alpha.0.57/qbicc-rt-java.base-17.alpha.0.57.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/openjfx/javafx-controls/21/javafx-controls-21-win.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/mongodb/bson-record-codec/4.11.1/bson-record-codec-4.11.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/qbicc/rt/qbicc-rt-java.xml/17.alpha.0.57/qbicc-rt-java.xml-17.alpha.0.57.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/openjfx/javafx-controls/21/javafx-controls-21.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

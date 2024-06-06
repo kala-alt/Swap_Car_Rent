@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="366.0" prefWidth="800.0" style="-fx-background-color: yellow;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mutualrentacar.SetDatesController">
+   <children>
+      <Label alignment="CENTER" layoutX="61.0" layoutY="45.0" prefHeight="58.0" prefWidth="201.0" text="Начало на наема:">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="60.0" layoutY="154.0" prefHeight="58.0" prefWidth="201.0" text="Край на наема:">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="dtStart" focusTraversable="false" layoutX="280.0" layoutY="51.0" prefHeight="46.0" prefWidth="192.0" promptText="От дата" />
+      <DatePicker fx:id="dtEnd" focusTraversable="false" layoutX="279.0" layoutY="160.0" prefHeight="46.0" prefWidth="192.0" promptText="До дата" />
+      <Separator layoutX="-3.0" layoutY="128.0" prefHeight="0.0" prefWidth="530.0" />
+      <ImageView fitHeight="245.0" fitWidth="244.0" layoutX="542.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../../Downloads/MutualRentACar/MutualRentACar/src/main/resources/Selected_Images/calendar.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="goBack" layoutX="504.0" layoutY="290.0" mnemonicParsing="false" onAction="#goBack" prefHeight="37.0" prefWidth="218.0" style="-fx-background-color: #2b75ed;" text="Назад">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnContinue" layoutX="52.0" layoutY="290.0" mnemonicParsing="false" onAction="#submit" prefHeight="37.0" prefWidth="218.0" style="-fx-background-color: #2b75ed;" text="Потвърди" textFill="#fcfcfc">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

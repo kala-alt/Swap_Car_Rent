@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="664.0" prefWidth="1012.0" style="-fx-background-color: #b8aeb2;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mutualrentacar.HomePageController">
+   <children>
+      <Label alignment="CENTER" layoutX="299.0" layoutY="30.0" prefHeight="101.0" prefWidth="415.0" text="Добре Дошли!">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="318.0" fitWidth="563.0" layoutX="14.0" layoutY="152.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../System_Images/HomePageImg.jpg" />
+         </image></ImageView>
+      <Label fx:id="lbl1" alignment="CENTER" layoutX="589.0" layoutY="217.0" prefHeight="59.0" prefWidth="409.0" style="-fx-underline: true;" text="Отдай колата си под наем" textFill="RED">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblContinue" alignment="CENTER" layoutX="299.0" layoutY="547.0" onMouseClicked="#goToSearchPage" prefHeight="74.0" prefWidth="431.0" style="-fx-border-color: black; -fx-border-radius: 10; -fx-border-width: 2.5px;" text="Нека започваме ....">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbl2" alignment="CENTER" layoutX="595.0" layoutY="282.0" prefHeight="59.0" prefWidth="409.0" style="-fx-underline: true;" text="И покарай мечтания автомобил" textFill="RED">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbl3" alignment="CENTER" layoutX="589.0" layoutY="359.0" prefHeight="59.0" prefWidth="422.0" style="-fx-underline: true;" text="Без да даваш излишно много пари!" textFill="RED">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

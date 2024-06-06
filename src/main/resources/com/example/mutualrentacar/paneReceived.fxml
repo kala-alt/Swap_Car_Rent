@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane id="pane" onMouseClicked="#onClick" prefHeight="200.0" prefWidth="928.0" style="-fx-background-color: #bfbbbb;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mutualrentacar.PaneReceivedController">
+    <children>
+        <ImageView fx:id="imgView" fitHeight="168.0" fitWidth="211.0" layoutX="14.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../Selected_Images/sedan.png" />
+            </image></ImageView>
+        <Separator layoutY="178.0" prefHeight="8.0" prefWidth="928.0" />
+        <Label id="lbl" fx:id="lblTitle" alignment="CENTER" layoutX="224.0" layoutY="14.0" prefHeight="34.0" prefWidth="696.0" style="-fx-alignment: center;" text="Ford Fiesta mk6 2007 1.4TDCI 50KW">
+            <font>
+                <Font name="System Bold" size="22.0" />
+            </font>
+        </Label>
+        <Label fx:id="lblDescription" layoutX="254.0" layoutY="121.0" prefHeight="50.0" prefWidth="637.0" style="-fx-alignment: center;" wrapText="true">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+    </children>
+</Pane>

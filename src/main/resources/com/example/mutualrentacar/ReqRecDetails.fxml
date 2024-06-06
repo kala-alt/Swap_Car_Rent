@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="834.0" prefWidth="1278.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mutualrentacar.ReqRecDetailsController">
+   <children>
+      <ImageView fx:id="imgView" fitHeight="315.0" fitWidth="352.0" layoutX="29.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Selected_Images/sedan.png" />
+         </image>
+      </ImageView>
+      <TextArea fx:id="txtDescription" editable="false" layoutX="14.0" layoutY="354.0" prefHeight="294.0" prefWidth="1004.0" promptText="Описание на офертата" wrapText="true">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TextArea>
+      <Label fx:id="lblRecDate" layoutX="594.0" layoutY="67.0" prefHeight="88.0" prefWidth="382.0" text="Тази оферта е получена на XX.XX.XXXXг." wrapText="true">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="88.0" fitWidth="92.0" layoutX="489.0" layoutY="67.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Selected_Images/calendar.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblUserRec" layoutX="29.0" layoutY="676.0" prefHeight="60.0" prefWidth="376.0" text="Ще получа: XX лв">
+         <font>
+            <Font name="System Bold Italic" size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblOwnerRec" layoutX="606.0" layoutY="676.0" prefHeight="60.0" prefWidth="376.0" text="Ще платя: XX лв">
+         <font>
+            <Font name="System Bold Italic" size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="cancel" alignment="CENTER" layoutX="713.0" layoutY="757.0" onMouseClicked="#cancel" prefHeight="53.0" prefWidth="163.0" style="-fx-background-color: red; -fx-background-radius: 15;" text="Откажи">
+         <font>
+            <Font name="System Bold Italic" size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="accept" alignment="CENTER" layoutX="136.0" layoutY="757.0" onMouseClicked="#acceptOffer" prefHeight="53.0" prefWidth="221.0" style="-fx-background-color: green; -fx-background-radius: 15;" text="Приеми офертата">
+         <font>
+            <Font name="System Bold Italic" size="19.0" />
+         </font>
+      </Label>
+      <Pane layoutX="1018.0" prefHeight="834.0" prefWidth="260.0" style="-fx-background-color: #a8a8a8;">
+         <children>
+            <Label alignment="CENTER" layoutY="239.0" onMouseClicked="#Home" prefHeight="53.0" prefWidth="260.0" text="Начало">
+               <font>
+                  <Font name="System Bold Italic" size="22.0" />
+               </font>
+            </Label>
+            <Separator layoutY="286.0" prefHeight="12.0" prefWidth="260.0" />
+            <Label fx:id="lblMyAccount" alignment="CENTER" layoutY="306.0" onMouseClicked="#goToMyAccount" prefHeight="53.0" prefWidth="260.0" text="Моят профил">
+               <font>
+                  <Font name="System Bold Italic" size="22.0" />
+               </font>
+            </Label>
+            <Separator layoutY="353.0" prefHeight="12.0" prefWidth="260.0" />
+            <Label alignment="CENTER" layoutY="365.0" onMouseClicked="#goToSearchPage" prefHeight="53.0" prefWidth="260.0" text="Други оферти">
+               <font>
+                  <Font name="System Bold Italic" size="22.0" />
+               </font>
+            </Label>
+            <Separator layoutY="412.0" prefHeight="12.0" prefWidth="260.0" />
+            <Label alignment="CENTER" layoutY="432.0" onMouseClicked="#Exit" prefHeight="53.0" prefWidth="260.0" text="Изход">
+               <font>
+                  <Font name="System Bold Italic" size="22.0" />
+               </font>
+            </Label>
+            <Separator layoutY="479.0" prefHeight="12.0" prefWidth="260.0" />
+         </children>
+      </Pane>
+      <Label fx:id="lblRentPeriod" layoutX="474.0" layoutY="196.0" prefHeight="46.0" prefWidth="489.0" text="Период на наема: ХХ">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnSwapCar" layoutX="505.0" layoutY="295.0" mnemonicParsing="false" onAction="#showSwapCar" prefHeight="46.0" prefWidth="315.0" style="-fx-background-radius: 20; -fx-background-color: yellow; -fx-border-color: black; -fx-border-radius: 20;" text="Виж предложен автомобил!">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Label fx:id="lblNoSwapCar" alignment="CENTER" layoutX="399.0" layoutY="295.0" prefHeight="46.0" prefWidth="527.0" style="-fx-background-color: red;" text="Няма предложен автомобил в замяна!" visible="false">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

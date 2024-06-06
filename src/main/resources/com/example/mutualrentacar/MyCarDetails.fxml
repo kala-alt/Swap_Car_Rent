@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="637.0" prefWidth="1083.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mutualrentacar.MyCarDetailsController">
+
+
+
+    <children>
+        <ImageView fx:id="carImage" fitHeight="315.0" fitWidth="352.0" layoutX="29.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../Selected_Images/sedan.png" />
+            </image>
+        </ImageView>
+        <TextArea fx:id="txtDescription" editable="false" layoutX="14.0" layoutY="354.0" prefHeight="182.0" prefWidth="865.0" promptText="Описание на автомобила" wrapText="true">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </TextArea>
+        <Label fx:id="btnDeleteCar" alignment="CENTER" layoutX="293.0" layoutY="557.0" onMouseClicked="#deleteCar" prefHeight="60.0" prefWidth="307.0" style="-fx-background-color: red; -fx-background-radius: 15;" text="Изтриий автомобил">
+            <font>
+                <Font name="System Bold Italic" size="24.0" />
+            </font>
+        </Label>
+        <Pane layoutX="879.0" prefHeight="637.0" prefWidth="208.0" style="-fx-background-color: #a8a8a8;">
+            <children>
+                <Label alignment="CENTER" layoutX="-3.0" layoutY="182.0" onMouseClicked="#Home" prefHeight="53.0" prefWidth="208.0" text="Начало">
+                    <font>
+                        <Font name="System Bold Italic" size="22.0" />
+                    </font>
+                </Label>
+                <Separator layoutX="-3.0" layoutY="229.0" prefHeight="12.0" prefWidth="214.0" />
+                <Label fx:id="lblMyAccount" alignment="CENTER" layoutX="-3.0" layoutY="249.0" onMouseClicked="#goToMyAccount" prefHeight="53.0" prefWidth="208.0" text="Моят профил">
+                    <font>
+                        <Font name="System Bold Italic" size="22.0" />
+                    </font>
+                </Label>
+                <Separator layoutX="-3.0" layoutY="296.0" prefHeight="12.0" prefWidth="208.0" />
+                <Label alignment="CENTER" layoutX="-3.0" layoutY="308.0" onMouseClicked="#goToSearchPage" prefHeight="53.0" prefWidth="208.0" text="Други оферти">
+                    <font>
+                        <Font name="System Bold Italic" size="22.0" />
+                    </font>
+                </Label>
+                <Separator layoutX="-3.0" layoutY="355.0" prefHeight="12.0" prefWidth="208.0" />
+                <Label alignment="CENTER" layoutX="-3.0" layoutY="375.0" onMouseClicked="#Exit" prefHeight="53.0" prefWidth="214.0" text="Изход">
+                    <font>
+                        <Font name="System Bold Italic" size="22.0" />
+                    </font>
+                </Label>
+                <Separator layoutX="-3.0" layoutY="422.0" prefHeight="12.0" prefWidth="214.0" />
+            </children>
+        </Pane>
+        <Label fx:id="lblNoSwapCar" alignment="CENTER" layoutX="399.0" layoutY="295.0" prefHeight="46.0" prefWidth="527.0" style="-fx-background-color: red;" text="Няма предложен автомобил в замяна!" visible="false">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+      <Label fx:id="txtEngine" layoutX="554.0" layoutY="31.0" prefHeight="75.0" prefWidth="249.0" text="Двигател: 1.4ТДЦИ">
+         <font>
+            <Font name="System Italic" size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="txtYear" layoutX="588.0" layoutY="157.0" prefHeight="55.0" prefWidth="260.0" text="Година: 2000">
+         <font>
+            <Font name="Candara Italic" size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="txtFuel" alignment="CENTER" layoutX="504.0" layoutY="248.0" prefHeight="95.0" prefWidth="400.0" text="Гориво: Газ" wrapText="true">
+         <font>
+            <Font name="System Italic" size="24.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="83.0" fitWidth="131.0" layoutX="471.0" layoutY="136.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Selected_Images/agenda.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="83.0" fitWidth="131.0" layoutX="450.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Selected_Images/car-engine.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="83.0" fitWidth="131.0" layoutX="421.0" layoutY="248.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Selected_Images/fuel.png" />
+         </image>
+      </ImageView>
+    </children>
+
+</AnchorPane>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="685.0" prefWidth="891.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mutualrentacar.ApprovedRequestsController">
+
+                <Label fx:id="lblTitle" alignment="CENTER" layoutX="213.0" layoutY="40.0" prefHeight="69.0" prefWidth="634.0" text="Преглед на одобрените заявки">
+    <font>
+        <Font name="System Bold" size="30.0" />
+    </font>
+</Label>
+    <ScrollPane fx:id="scrollPane" hbarPolicy="ALWAYS" layoutX="13.0" layoutY="181.0" prefHeight="505.0" prefWidth="865.0" style="-fx-border-width: 20px;" vbarPolicy="ALWAYS">
+      <content>
+         <Label fx:id="lblNoResults" prefHeight="82.0" prefWidth="851.0" style="-fx-alignment: center;" text="Няма открити резултати!" textFill="RED">
+            <font>
+               <Font name="System Bold Italic" size="24.0" />
+            </font>
+         </Label>
+      </content></ScrollPane>
+   <ImageView fx:id="img" fitHeight="120.0" fitWidth="202.0" layoutX="30.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../../../Selected_Images/approvedImg.png" />
+      </image>
+   </ImageView>
+   <Button fx:id="btnMyReq" layoutX="161.0" layoutY="134.0" mnemonicParsing="false" onAction="#loadMyRequest" prefHeight="39.0" prefWidth="209.0" style="-fx-background-color: #9a9b9c;" text="Мои заявки">
+      <font>
+         <Font name="System Bold" size="18.0" />
+      </font>
+   </Button>
+   <Button fx:id="btnRecReq" layoutX="521.0" layoutY="134.0" mnemonicParsing="false" onAction="#showApprovedRequests" prefHeight="39.0" prefWidth="209.0" style="-fx-background-color: #24aae3;" text="Получени заявки">
+      <font>
+         <Font name="System Bold" size="18.0" />
+      </font>
+   </Button>
+   <Button layoutX="752.0" layoutY="14.0" mnemonicParsing="false" onAction="#goBack" prefHeight="39.0" prefWidth="126.0" style="-fx-background-radius: 15; -fx-background-color: #7dd8ff; -fx-border-color: black; -fx-border-radius: 15;" text="Назад">
+      <font>
+         <Font name="System Bold" size="18.0" />
+      </font>
+   </Button>
+</AnchorPane>

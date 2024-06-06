@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="824.0" prefWidth="948.0" style="-fx-background-color: #fc4235;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mutualrentacar.SearchPageController">
+   <children>
+      <TextField fx:id="txtSearchBar" alignment="CENTER" focusTraversable="false" layoutX="12.0" layoutY="182.0" prefHeight="46.0" prefWidth="870.0" promptText="Търси по марка и модел автомобил" style="-fx-border-color: black; -fx-font-size: 22px; -fx-border-radius: 10; -fx-background-radius: 10;">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <ScrollPane fx:id="scrollResult" hbarPolicy="ALWAYS" layoutX="6.0" layoutY="265.0" prefHeight="545.0" prefWidth="932.0" style="-fx-border-color: black; -fx-background-radius: 10; -fx-border-radius: 10; -fx-border-width: 3;" vbarPolicy="ALWAYS">
+         <content>
+            <Label fx:id="lblNoCars" prefHeight="90.0" prefWidth="913.0" style="-fx-alignment: center; visibility: flse;" text="Няма добавени коли в базата данни!" textFill="#ff3300">
+               <font>
+                  <Font name="System Bold Italic" size="23.0" />
+               </font>
+            </Label>
+         </content></ScrollPane>
+      <DatePicker fx:id="dtStart" focusTraversable="false" layoutX="212.0" layoutY="118.0" prefHeight="46.0" prefWidth="235.0" promptText="От дата" style="-fx-font-size: 17px;" />
+      <DatePicker fx:id="dtEnd" focusTraversable="false" layoutX="552.0" layoutY="118.0" prefHeight="46.0" prefWidth="235.0" promptText="До дата" style="-fx-font-size: 17px;" />
+      <ImageView fitHeight="63.0" fitWidth="54.0" layoutX="882.0" layoutY="179.0" onMouseClicked="#onSearchClick" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Selected_Images/loupe.png" />
+         </image></ImageView>
+      <Pane layoutY="-1.0" prefHeight="90.0" prefWidth="948.0" style="-fx-background-color: grey; -fx-border-color: black; -fx-background-size: 5;">
+         <children>
+            <Label alignment="CENTER" layoutX="750.0" layoutY="31.0" onMouseClicked="#onExitClick" prefHeight="31.0" prefWidth="111.0" text="Изход">
+               <font>
+                  <Font name="Arial" size="24.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="434.0" layoutY="31.0" onMouseClicked="#goToMyAccount" prefHeight="31.0" prefWidth="149.0" text="Моят акаунт">
+               <font>
+                  <Font name="Arial" size="24.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="130.0" layoutY="31.0" onMouseClicked="#requests" prefHeight="31.0" prefWidth="111.0" text="Заявки">
+               <font>
+                  <Font name="Arial" size="24.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="46.0" fitWidth="54.0" layoutX="88.0" layoutY="20.0" onMouseClicked="#requests" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Selected_Images/query.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="46.0" fitWidth="54.0" layoutX="388.0" layoutY="25.0" onMouseClicked="#goToMyAccount" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Selected_Images/my-account.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="46.0" fitWidth="54.0" layoutX="716.0" layoutY="25.0" onMouseClicked="#onExitClick" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Selected_Images/logout.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Label fx:id="lblNotFound" alignment="CENTER" layoutX="15.0" layoutY="286.0" prefHeight="64.0" prefWidth="905.0" text="Няма намерени резултати!" textFill="#ec0000" visible="false">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.SplitMenuButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="947.0" prefWidth="801.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mutualrentacar.AddCarController">
+   <content>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1139.0" prefWidth="976.0" style="-fx-background-color: #cccccc;">
+         <children>
+            <ImageView fx:id="imgSetCar" fitHeight="276.0" fitWidth="304.0" layoutX="88.0" layoutY="37.0" onMouseClicked="#openImage" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Selected_Images/sedan.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="txtBrand" layoutX="445.0" layoutY="87.0" prefHeight="41.0" prefWidth="230.0" promptText="Марка" style="-fx-border-color: black;">
+               <font>
+                  <Font name="System Bold Italic" size="19.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtModel" layoutX="445.0" layoutY="154.0" prefHeight="41.0" prefWidth="230.0" promptText="Модел" style="-fx-border-color: black;">
+               <font>
+                  <Font name="System Bold Italic" size="19.0" />
+               </font>
+            </TextField>
+            <ToggleButton fx:id="engine" layoutX="468.0" layoutY="311.0" mnemonicParsing="false" onAction="#onEngineButton" prefHeight="39.0" prefWidth="231.0" style="-fx-background-color: #37870f; -fx-border-style: dashed;" text="Към Електрически">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </ToggleButton>
+            <ImageView fx:id="imgFuel" fitHeight="242.0" fitWidth="382.0" layoutX="50.0" layoutY="346.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../System_Images/Fuel_image.jpg" />
+               </image>
+            </ImageView>
+            <TextArea fx:id="txtDescription" layoutX="57.0" layoutY="647.0" prefHeight="176.0" prefWidth="701.0" promptText="Допълнително описание" style="-fx-border-style: dashed;">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </TextArea>
+            <RadioButton fx:id="hybrid" layoutX="612.0" layoutY="388.0" mnemonicParsing="false" onAction="#setHybridAction" prefHeight="25.0" prefWidth="110.0" text="Хибрид" visible="false">
+               <font>
+                  <Font name="System Italic" size="16.0" />
+               </font>
+            </RadioButton>
+            <CheckBox fx:id="gas" layoutX="468.0" layoutY="387.0" mnemonicParsing="false" onAction="#lockDiesel" text="Газ">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="a95" layoutX="468.0" layoutY="428.0" mnemonicParsing="false" onAction="#lockDiesel" text="Бензин">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="diesel" layoutX="468.0" layoutY="473.0" mnemonicParsing="false" onAction="#lockGasA95" text="Дизел">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </CheckBox>
+            <TextField fx:id="txtEngine" layoutX="449.0" layoutY="530.0" prefHeight="41.0" prefWidth="230.0" promptText="Мотор" style="-fx-background-radius: 30; -fx-alignment: center;">
+               <font>
+                  <Font name="System Bold Italic" size="19.0" />
+               </font>
+            </TextField>
+            <Button fx:id="btnClear" layoutX="352.0" layoutY="843.0" mnemonicParsing="false" onAction="#onClearAllBtn" prefHeight="59.0" prefWidth="232.0" style="-fx-background-color: #615a5a; -fx-background-radius: 10; -fx-border-radius: 10;" text="Изчисти" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="22.0" />
+               </font>
+            </Button>
+            <Button layoutX="35.0" layoutY="843.0" mnemonicParsing="false" onAction="#onPublishAction" prefHeight="59.0" prefWidth="264.0" style="-fx-background-color: #b5b5b5; -fx-background-radius: 20; -fx-border-radius: 20; -fx-border-color: black;" text="Публикувай">
+               <font>
+                  <Font name="System Bold Italic" size="22.0" />
+               </font>
+            </Button>
+            <SplitMenuButton fx:id="prodYear" layoutX="445.0" layoutY="231.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="266.0" style="-fx-background-color: #b5b5b5; -fx-background-radius: 15; -fx-border-radius: 15; -fx-font-size: 18;" text="Година на производство">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Action 1" />
+                  <MenuItem mnemonicParsing="false" text="Action 2" />
+               </items>
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </SplitMenuButton>
+            <ImageView fx:id="imgGas" fitHeight="98.0" fitWidth="143.0" layoutX="270.0" layoutY="346.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@../../../System_Images/avtogaz_image.jpg" />
+               </image>
+            </ImageView>
+            <Button layoutX="610.0" layoutY="842.0" mnemonicParsing="false" onAction="#goBack" prefHeight="60.0" prefWidth="164.0" style="-fx-background-radius: 15; -fx-background-color: #7dd8ff;" text="Назад">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </content>
+</ScrollPane>
